@@ -1,0 +1,37 @@
+#Manejo de git.
+
+Relación entre carpetas:
+Working Dir -->  Local Repo --> Staging Area --> Remote Rep.
+
+0.) git clone "link"
+
+default branch master:
+	1.) git add programa.py
+	2.) git commit -m "version x"
+	3.) git push
+
+
+Gestion de ramas:
+
+0.) git branch
+1.) git branch <nueva_branch>    //Crea una nueva branch.
+2.) git branch -d <nueva_branch> //Elimina la branch -de forma segura-.
+3.) git branch -D <nueva_branch> //Elimina la branch, mas radical.
+
+4.) git branch -m <nombre_nuevo> //Cambia el nombre de la branch
+5.) git branch -a                //Enumera todas las branch, incluidas las remotas.
+
+Navegar entre ramas:
+
+0.) git checkout <nueva_branch>                   //switch a una nueva rama que ya esxiste.
+1.) git checkout -b <nueva_branch>                //Crea y hace un switch a una nueva rama.
+2.) git push --set-upstream origin <nueva_branch> //Para crear la rama en el repo remoto.
+
+
+Ir a versiones anteriores dentro de una rama:
+
+0.) git log --oneline                 //Lista todos los commit con sus codigos.
+1.) git checkout <codigo> programa.py //Volvemos a la version  <codigo>
+2.) git add programa.py
+3.) git commit -m "Restauramos version"
+4.) git push
