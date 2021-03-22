@@ -35,3 +35,11 @@ Ir a versiones anteriores dentro de una rama:
 2.) git add programa.py
 3.) git commit -m "Restauramos version"
 4.) git push
+
+Crear una branch con una version anterior.
+
+0.) git checkout -b <old-project-state> <0ad5a7a6>
+
+Volver al pasado y destruir el futuro.
+
+0.) git reset --hard <0ad5a7a6> //puede ser --soft.
